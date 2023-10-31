@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: primary;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 0 10px #bbb;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+header section h1 {
+    margin: 0;
+    padding-top: 10px;
+    color: rgb(19, 185, 19);
+}
+
+header #nav ul li select {
+    border: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container div nav ul {
+    display: flex;
+    padding: 10px;
+    align-items: baseline;
+    margin: 0;
+}
+
+.container div nav ul li {
+    overflow: hidden;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+}
+
+.container div nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container div nav ul li a:hover {
+    color: #1da11d;
+    font-size: medium;
+}
+
+.container div nav ul .btn1 {
+    background-color: rgb(34, 199, 34);
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.container div nav ul .btn1:hover {
+    background-color: #1da11d;
+}
+
+.container div nav ul li .btn1 a {
+    color: white;
+}
+
+.active a {
+    text-emphasis-color: #1da11d;
+    font-weight: bold;
+}
+
+/* First-layer */
+#first-layer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+#first-layer .first-child p {
+    font-size: 12px;
+}
+
+/* Second Layer */
+.container .seperate {
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+#second-layer div p {
+    /* background-color: #1da11d; */
+    margin: 0;
+}
+
+#second-layer div h3 {
+    margin: 2px 0 7px 0;
+}
+
+#second-layer div button {
+    margin-bottom: 5px;
+    background-color: #ccfacc;
+    color: #0d750d;
+    font-weight: bolder;
+    border: none;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+}
+
+#second-layer .layer2 {
+    padding-bottom: 40px;
+}
+
+#second-layer div button:hover {
+    background-color: #1da11d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#second-layer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#second-layer .img {
+    max-height: 200px;
+    width: 150px;
+    align-self: center;
+    justify-self: center;
+    background-color: #0d750d;
+    border-radius: 100%;
+    display: flex;
+    padding-right: 80px;
+}
+
+.img img {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    justify-items: center;
+}
+
+#second-layer .split .left {
+    text-align: right;
+}
+
+.container .seperate button {
+    padding: 10px;
+    font-weight: bolder;
+    background-color: #ccfacc;
+    border: none;
+    border-radius: 5px;
+}
+
+.container .seperate button:hover {
+    background-color: #0d750d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Third Layer */
+#third-layer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+}
+#third-layer .third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* Last layer */
+#last-layer {
+    background-color: #0d750d;
+    color: #eeecec;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 90px;
+}
+
+#last-layer .last-one {
+    display: flex;
+}
+
+#last-layer .last-one .img0 {
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+#last-layer .last-one .img0 .img1 {
+    padding-top: 60px;
+}
+
+#last-layer .last-one .img0 .img2 {
+    padding-bottom: 60px;
+}
+
+#last-layer .last-one button {
+    background-color: #000000;
+    color: #eeecec;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* footer */
+footer {
+    background-color: rgb(24, 23, 23);
+    color: #c2baba;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .container .foot li {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+footer .container .foot ul {
+    padding: 12px;
+}
+
+footer .container .foot li a {
+    text-decoration: none;
+    color: #c2baba;
+}
+
+footer .foot {
+    width: 40%;
+}
+
+footer #definition {
+    width: 20%;
+}
+
+footer .container .copyright p {
+    float: left;
+    margin: 0;
+}
+
+footer #copyright {
+    display: block;
+}
+
+footer #copyright #container {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+footer #copyright #container ul li {
+    display: inline-flex;
+    padding: 0 5px 0 5px;
+    margin: 0;
+}
+
+footer #copyright #container ul {
+    margin: 0;
+}
+
+footer #copyright #container ul img {
+    margin: 0;
+}
+
+#copyright .copyright2 ul .logo {
+    color: #ccfacc;
+}
+
+/* media query for the head */
