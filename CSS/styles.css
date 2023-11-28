@@ -10,6 +10,7 @@ header {
     box-shadow: 0 0 10px #bbb;
     padding-bottom: 10px;
     padding-top: 0;
+    width: 100%;
 }
 
 header .container {
@@ -48,7 +49,13 @@ header #nav ul li select {
 
 .container div nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+
+.container div nav ul li .active {
+    color: #1da11d;
+    font-weight: bold;
+    font-size: medium;
 }
 
 .container div nav ul li a:hover {
@@ -71,17 +78,14 @@ header #nav ul li select {
     color: white;
 }
 
-.active a {
-    text-emphasis-color: #1da11d;
-    font-weight: bold;
-}
-
 /* First-layer */
 #first-layer {
     display: flex;
     flex-direction: row;
     padding-top: 60px;
+    justify-content: space-between;
 }
+
 #first-layer .first-child p {
     font-size: 12px;
 }
@@ -94,7 +98,6 @@ header #nav ul li select {
 }
 
 #second-layer div p {
-    /* background-color: #1da11d; */
     margin: 0;
 }
 
@@ -149,6 +152,44 @@ header #nav ul li select {
     text-align: right;
 }
 
+/* Third Layer */
+#third-layer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 15px;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+#third-layer div {
+    grid-gap: 10px;
+}
+
+#third-layer .third {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#third-layer .img-bg {
+    background-color: #0d750d;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.img01 {
+    transform: rotate(-30deg);
+    margin-left: -20px;
+    width: 120px;
+}
+
+.img02 {
+    transform: rotate(30deg);
+    margin-left: 55px;
+    margin-top: -80px;
+    width: 145px;
+}
+
 .container .seperate button {
     padding: 10px;
     font-weight: bolder;
@@ -163,43 +204,34 @@ header #nav ul li select {
     cursor: pointer;
 }
 
-/* Third Layer */
-#third-layer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
-}
-#third-layer .third {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-
-
 /* Last layer */
 #last-layer {
     background-color: #0d750d;
     color: #eeecec;
     padding: 20px;
     border-radius: 10px;
-    margin: 90px;
+    margin: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 #last-layer .last-one {
     display: flex;
+    justify-content: space-between;
 }
 
 #last-layer .last-one .img0 {
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
 }
 
 #last-layer .last-one .img0 .img1 {
-    padding-top: 60px;
+    padding-top: 70px;
+    margin-bottom: -40px;
 }
 
 #last-layer .last-one .img0 .img2 {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
+    margin-top: -40px;
 }
 
 #last-layer .last-one button {
@@ -261,13 +293,14 @@ footer #copyright #container {
 }
 
 footer #copyright #container ul li {
-    display: inline-flex;
+    display: flex;
     padding: 0 5px 0 5px;
     margin: 0;
 }
 
 footer #copyright #container ul {
     margin: 0;
+    display: flex;
 }
 
 footer #copyright #container ul img {
@@ -279,3 +312,177 @@ footer #copyright #container ul img {
 }
 
 /* media query for the head */
+@media (max-width: 500px) {
+    body {
+        font-size: xx-small;
+    }
+
+    .container div nav ul .btn1 {
+    border-radius: 3px;
+    padding: 0 8px 3px 8px;
+    }
+
+    .container div nav ul .btn1 a {
+        display: inline-block;
+    }
+
+    p {
+        font-size: 7px;
+    }
+
+    h2 {
+        font-size: 8px;
+    }
+
+    header {
+        padding-bottom: 0;
+    }
+
+    header .container {
+        justify-content: baseline;
+    }
+
+    header section h1 {
+        font-size: small;
+    }
+
+    .container div nav ul {
+        padding: 10px;
+    }
+
+    .container div nav ul li a:hover {
+        font-size: 8px;
+    }
+
+    .container div nav ul li .active {
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    nav li a {
+        font-size: 5px;
+        margin: -5px;
+    }
+
+    /* First layer */
+    #first-layer {
+        padding-top: 30px;
+    }
+
+    #img1 img {
+        width: 100px;
+        height: 20vh;
+    }
+
+    .text1 h2 {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    #first-layer .text1 p {
+        font-size: 7px;
+    }
+
+    /* Second layer */
+    #second-layer {
+        font-size: 8px;
+    }
+
+    h3 {
+        font-size: 6px;
+    }
+
+    #second-layer .img {
+        height: 90px;
+        width: 3px;
+        margin: 10px;
+    }
+
+    
+    #second-layer div button {
+        padding: 1px 4px;
+    }
+
+    .split img {
+        width: 120px;
+        height: 110px;
+        margin-left: -13px;
+    }
+
+    /* Third Layer */
+    .container .seperate button {
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    #third-layer {
+        font-size: 8px;
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 15px;
+    }
+
+    #third-layer button {
+        padding: 0;
+    }
+
+    #third-layer .img-bg {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .img01 {
+        margin-left: -10px;
+        width: 60px;
+    }
+    
+    .img02 {
+        margin-left: 30px;
+        margin-top: -40px;
+        width: 70px;
+    }
+
+    /* Last Layer */
+    #last-layer {
+        font-size: xx-small;
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 0px 10px 10px 10px;
+    }
+
+    #last-layer .last-one .img0 {
+        margin-right: -10px;
+    }
+
+    #last-layer .last-one .img0 .img1 {
+        padding-top: 30px;
+        margin-bottom: -40px;
+        margin-left: -10px;
+    }
+    
+    #last-layer .last-one .img0 .img2 {
+        padding-bottom: 0;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    #last-layer .last-one button {
+        padding: 5px;
+        font-size: xx-small;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .img0 img {
+        width: 50px;
+        height: 80px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 5px;
+    }
+
+    .copyright2 img {
+        width: 10px;
+    }
+}
