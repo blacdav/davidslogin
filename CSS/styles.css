@@ -90,6 +90,17 @@ header #nav ul li select {
     font-size: 12px;
 }
 
+#first-layer #download .imga {
+    margin-bottom: 16px;
+    margin-left: -25px;
+    width: 220px;
+}
+
+#first-layer #download .imgb {
+    width: 180px;
+    margin-left: -25px;
+}
+
 /* Second Layer */
 .container .seperate {
     text-align: center;
@@ -200,6 +211,22 @@ header #nav ul li select {
 
 .container .seperate button:hover {
     background-color: #0d750d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#third-layer div button {
+    margin-bottom: 5px;
+    background-color: #ccfacc;
+    color: #0d750d;
+    font-weight: bolder;
+    border: none;
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+}
+
+#third-layer div button:hover {
+    background-color: #1da11d;
     color: #ffffff;
     cursor: pointer;
 }
@@ -370,8 +397,8 @@ footer #copyright #container ul img {
     }
 
     #img1 img {
-        width: 100px;
-        height: 20vh;
+        width: 110px;
+        height: 110px;
     }
 
     .text1 h2 {
@@ -381,6 +408,22 @@ footer #copyright #container ul img {
 
     #first-layer .text1 p {
         font-size: 7px;
+        margin-top: 0px;
+    }
+
+    #first-layer #download {
+        margin-top: -20px;
+    }
+
+    #first-layer #download .imga {
+        width: 80px;
+        margin-left: -10px;
+    }
+
+    #first-layer #download .imgb {
+        width: 60px;
+        margin-bottom: 12px;
+        margin-left: -10px;
     }
 
     /* Second layer */
@@ -439,6 +482,11 @@ footer #copyright #container ul img {
         margin-left: 30px;
         margin-top: -40px;
         width: 70px;
+    }
+
+    #third-layer div button {
+        padding: 3px 4px 5px 3px;
+        font-size: xx-small;
     }
 
     /* Last Layer */
