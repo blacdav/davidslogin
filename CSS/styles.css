@@ -12,6 +12,7 @@ header {
     padding-top: 0;
     width: 100%;
     position: fixed;
+    margin-bottom: 60px;
 }
 
 header .container {
@@ -84,7 +85,6 @@ header #nav ul li select {
     display: flex;
     flex-direction: row;
     padding-top: 60px;
-    margin-top: 60px;
     justify-content: space-between;
 }
 
