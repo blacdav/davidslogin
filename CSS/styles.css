@@ -83,7 +83,8 @@ header #nav ul li select {
 #first-layer {
     display: flex;
     flex-direction: row;
-    margin-top: 120px;
+    top: 60px;
+    padding-top: 60px;
     justify-content: space-between;
 }
 
